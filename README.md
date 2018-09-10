@@ -30,6 +30,8 @@ It includes code to run object detection and instance segmentation on arbitrary 
 
 * ([model.py](mrcnn/model.py), [utils.py](mrcnn/utils.py), [config.py](mrcnn/config.py)): These files contain the main Mask RCNN implementation. 
 
+* [processvideo](samples/videoProcessing): a simple folder to test your weights on a given video  
+
 # Training on MS COCO
 We're providing pre-trained weights for MS COCO to make it easier to start. You can
 use those weights as a starting point to train your own variation on the network.
@@ -90,3 +92,5 @@ Use [via](https://github.com/JosephGesnouin/ViaAnnotationTool) to annotate/label
  
  # how to integrate mobinet:
  You simply have to rename your backbone and Arch parameters to "mobilenet224v1" the code is already included in the repo and comes from [that pull request](https://github.com/matterport/Mask_RCNN/pull/306) on the original Mask-RCNN git from Matterport
+
+# how to reduce Resnet from the hybrid we made (resnet 50 with only 1 middle layyer) to a resnet 18? Aka reduce computation time
