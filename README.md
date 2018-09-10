@@ -82,5 +82,8 @@ See examples in `samples/balloonfoot`, `samples/coco`, and `samples/footplayers.
 
 
 
-#how to train from scratch on 2 classes - and for a new database:
+# how to train from scratch on 2 classes - and for a new database:
 Use [via](https://github.com/JosephGesnouin/ViaAnnotationTool) to annotate/label the images and follow the template from [that](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation/blob/master/surgery.py) implementation that takes in consideration two different classes: stick to the JSON template and simply change your classes names, you should be fine. ([git](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation) of the dual classes project) 
+
+# how to train just final layers using a previous network trained on coco and a new db with annotated players:
+ In model.py you have that train() fonction that trains different layers depending on what params you give. You just have to edit for instance the train call in football.py with the regular expression that fits the amount of layers you want to train. Also a big help for transfer learning comes from that tutorial that should be self sufficient
