@@ -93,4 +93,5 @@ Use [via](https://github.com/JosephGesnouin/ViaAnnotationTool) to annotate/label
  # how to integrate mobinet:
  You simply have to rename your backbone and Arch parameters to "mobilenet224v1" the code is already included in the repo and comes from [that pull request](https://github.com/matterport/Mask_RCNN/pull/306) on the original Mask-RCNN git from Matterport
 
-# how to reduce Resnet from the hybrid we made (resnet 50 with only 1 middle layyer) to a resnet 18? Aka reduce computation time
+# how to reduce reduce computation time?
+ Multiple possibilities: change some parameters in [config.py](/mrcnn/config.py) 
