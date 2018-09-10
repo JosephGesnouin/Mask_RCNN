@@ -12,7 +12,7 @@ either follow [that](https://www.youtube.com/watch?v=2TikTv6PWDw) or the followi
     ```bash
     python3 setup.py install
     ``` 
-3. Download pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases).
+3. Download pre-trained COCO weights (mask_rcnn_coco.h5) from the [releases page](https://github.com/matterport/Mask_RCNN/releases). OR [ours](https://github.com/JosephGesnouin/Mask_RCNN/releases/tag/v1.0) that are already fitted for one class detection
 4. (Optional) To train or test on MS COCO install `pycocotools` from one of these repos. They are forks of the original pycocotools with fixes for Python3 and Windows (the official repo doesn't seem to be active anymore).
 
     * Linux: https://github.com/waleedka/coco
