@@ -2316,7 +2316,7 @@ class MaskRCNN():
             _, C2, C3, C4, C5 = mobilenet_graph(input_image, config.BACKBONE, 
                                                 alpha=1.0, train_bn=config.TRAIN_BN)
         else:
-            _, C2, C3, C4, C5 = resnet_short_graph(input_image, config.BACKBONE,
+            _, C2, C3, C4, C5 = resnet_graph(input_image, config.BACKBONE,
                                              stage5=True, train_bn=config.TRAIN_BN)
             
         # Top-down Layers
