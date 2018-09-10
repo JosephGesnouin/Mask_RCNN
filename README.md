@@ -1,4 +1,4 @@
-# Mask R-CNN for Object Detection and Segmentation in a [football game](https://www.youtube.com/watch?v=RQ97o6tM8gc&index=3&list=PLasxefpCczor6fWojQbdwGA0lMMCPzodp)
+# Mask R-CNN for players segmentation in a [football game](https://www.youtube.com/watch?v=RQ97o6tM8gc&index=3&list=PLasxefpCczor6fWojQbdwGA0lMMCPzodp)
 ![Instance Segmentation Sample](assets/4k_video.gif)
 
 ## Installation
@@ -25,7 +25,7 @@ either follow [that](https://www.youtube.com/watch?v=2TikTv6PWDw) or the followi
            subsets.
 
 # Getting Started
-* [demo.ipynb](samples/demo.ipynb) Is the easiest way to start. It shows an example of using a model pre-trained on MS COCO to segment objects in your own images.
+* ([demo.ipynb](samples/demo.ipynb), [demoBallon.ipynb](samples/demoBallon.ipynb), [demoFoot.ipynb](samples/demoFoot.ipynb))  Is the easiest way to start. It shows an example of using a model pre-trained on MS COCO to segment objects in your own images.
 It includes code to run object detection and instance segmentation on arbitrary images.
 
 * ([model.py](mrcnn/model.py), [utils.py](mrcnn/utils.py), [config.py](mrcnn/config.py)): These files contain the main Mask RCNN implementation. 
