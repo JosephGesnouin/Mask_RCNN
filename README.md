@@ -87,3 +87,6 @@ Use [via](https://github.com/JosephGesnouin/ViaAnnotationTool) to annotate/label
 
 # how to train just final layers using a previous network trained on coco and a new db with annotated players:
  In [model.py](https://github.com/JosephGesnouin/Mask_RCNN/blob/master/mrcnn/model.py) you have that [train()](https://github.com/JosephGesnouin/Mask_RCNN/blob/master/mrcnn/model.py#L2701-L2794) fonction that trains different layers depending on what params you give. You just have to edit for instance the train call in [football.py](phGesnouin/Mask_RCNN/blob/master/samples/footballplayers/footplayers.py#L227-L247) with the regular expression that fits the amount of layers you want to train. Also a big help for transfer learning comes from the tutorial linked previously and should be sufficient
+ 
+ # how to integrate mobinet:
+ You simply have to rename your backbone and Arch parameters to "mobilenet224v1" the code is already included in the repo and comes from [that pull request](https://github.com/matterport/Mask_RCNN/pull/306) on the original Mask-RCNN git from Matterport
