@@ -19,7 +19,6 @@ either follow [that](https://www.youtube.com/watch?v=2TikTv6PWDw) or the followi
     * Windows: https://github.com/philferriere/cocoapi.
     You must have the Visual C++ 2015 build tools on your path (see the repo for additional details)
     To train or test on MS COCO, you'll also need:
-         * pycocotools (installation instructions below)
          * [MS COCO Dataset](http://cocodataset.org/#home)
          * Download the 5K [minival](https://dl.dropboxusercontent.com/s/o43o90bna78omob/instances_minival2014.json.zip?dl=0)
            and the 35K [validation-minus-minival](https://dl.dropboxusercontent.com/s/s3tw5zcg7395368/instances_valminusminival2014.json.zip?dl=0)
@@ -78,7 +77,7 @@ the code of the model. It also supports loading multiple datasets at the
 same time, which is useful if the objects you want to detect are not 
 all available in one dataset. 
 
-See examples in `samples/shapes/train_shapes.ipynb`, `samples/coco/coco.py`, `samples/balloon/balloon.py`, and `samples/nucleus/nucleus.py`.
+See examples in `samples/balloonfoot`, `samples/coco`, and `samples/footplayers.py`.
 
 
 
