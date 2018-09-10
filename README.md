@@ -1,7 +1,8 @@
 # Mask R-CNN for Object Detection and Segmentation
+![Instance Segmentation Sample](assets/4k_video.gif)
 
 ## Installation
-either follow that video: https://www.youtube.com/watch?v=2TikTv6PWDw or the following steps
+either follow [that](https://www.youtube.com/watch?v=2TikTv6PWDw) or the following steps
 1. Install dependencies
    ```bash
    pip3 install -r requirements.txt
@@ -17,9 +18,6 @@ either follow that video: https://www.youtube.com/watch?v=2TikTv6PWDw or the fol
     * Linux: https://github.com/waleedka/coco
     * Windows: https://github.com/philferriere/cocoapi.
     You must have the Visual C++ 2015 build tools on your path (see the repo for additional details)
-
-
-![Instance Segmentation Sample](assets/4k_video.gif)
 
 # Getting Started
 * [demo.ipynb](samples/demo.ipynb) Is the easiest way to start. It shows an example of using a model pre-trained on MS COCO to segment objects in your own images.
