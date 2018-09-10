@@ -65,6 +65,7 @@ The training schedule, learning rate, and other parameters should be set in `sam
 
 Start by reading this [blog post about the balloon color splash sample](https://engineering.matterport.com/splash-of-color-instance-segmentation-with-mask-r-cnn-and-tensorflow-7c761e238b46). It covers the process starting from annotating images to training to using the results in a sample application.
 
+
 In summary, to train the model on your own dataset you'll need to extend two classes:
 
 ```Config```
@@ -81,4 +82,5 @@ See examples in `samples/balloonfoot`, `samples/coco`, and `samples/footplayers.
 
 
 
-
+#how to train from scratch on 2 classes - and for a new database:
+Use [via](https://github.com/JosephGesnouin/ViaAnnotationTool) to annotate/label the images and follow the template from [that](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation/blob/master/surgery.py) implementation that takes in consideration two different classes: stick to the JSON template and simply change your classes names, you should be fine. ([git](https://github.com/SUYEgit/Surgery-Robot-Detection-Segmentation) of the dual classes project) 
