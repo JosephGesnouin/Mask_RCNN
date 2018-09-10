@@ -94,4 +94,8 @@ Use [via](https://github.com/JosephGesnouin/ViaAnnotationTool) to annotate/label
  You simply have to rename your backbone and Arch parameters to "mobilenet224v1" the code is already included in the repo and comes from [that pull request](https://github.com/matterport/Mask_RCNN/pull/306) on the original Mask-RCNN git from Matterport
 
 # how to reduce reduce computation time?
- Multiple possibilities: change some parameters in [config.py](/mrcnn/config.py) 
+ Multiple possibilities: change some parameters in [config.py](/mrcnn/config.py) examples size of the FC layer, size of the images, amount of ROI...
+ Otherwise you go into [model.py](https://github.com/JosephGesnouin/Mask_RCNN/blob/master/mrcnn/model.py#L2255) at the build of the MaskRcnn and you directly change the layers to reduce them, for instance we were working with resnet101 - 50 and mobilenet you have plenty of different backbone architectures that could be tried BUT you need to make sure the output of the first fonction called such as *resnet_graph* or even *mobilenet_graph* is accordinatly sized to continue the MaskRCNN creation.
+ 
+# prediction procedure
+   You can use tensorboard to see how your training is going and to know if you can early stop the trainning, you obviously have to create a validation dataset aswell so you can see how good the model fits.
